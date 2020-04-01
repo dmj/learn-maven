@@ -12,6 +12,10 @@
     <url>https://github.com/dmj/learn-maven</url>
   </scm>
 
+  <properties>
+    <maven.scm.gitexe.sign_tags>true</maven.scm.gitexe.sign_tags>
+  </properties>
+
   <build>
     <plugins>
       <plugin>
@@ -24,6 +28,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-deploy-plugin</artifactId>
+        <version>3.0.0-M1</version>
         <configuration>
           <skip>true</skip>
         </configuration>
