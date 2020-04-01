@@ -13,7 +13,7 @@
   </scm>
 
   <properties>
-    <maven.scm.gitexe.sign_tags>true</maven.scm.gitexe.sign_tags>
+    <maven.scm.tag.sign>true</maven.scm.tag.sign>
   </properties>
 
   <build>
