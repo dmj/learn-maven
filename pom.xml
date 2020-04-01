@@ -10,11 +10,8 @@
     <developerConnection>scm:git:git@github.com:dmj/learn-maven.git</developerConnection>
     <tag>master</tag>
     <url>https://github.com/dmj/learn-maven</url>
+    
   </scm>
-
-  <properties>
-    <maven.scm.tag.sign>true</maven.scm.tag.sign>
-  </properties>
 
   <build>
     <plugins>
@@ -31,6 +28,14 @@
         <version>3.0.0-M1</version>
         <configuration>
           <skip>true</skip>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-scm-plugin</artifactId>
+        <version>1.11.2</version>
+        <configuration>
+          <sign>true</sign>
         </configuration>
       </plugin>
     </plugins>
